@@ -9,7 +9,7 @@ import Home from '../pages/general/Home.jsx'
 import Saved from '../pages/general/Saved.jsx'
 import MainLayout from '../components/MainLayout.jsx'
 import CreateFood from '../pages/food-partner/CreateFood.jsx'
-import Profile from '../pages/food-partner/profile.jsx'
+import Profile from '../pages/food-partner/Profile.jsx'
 
 const AppRoutes = () => {
     return (
