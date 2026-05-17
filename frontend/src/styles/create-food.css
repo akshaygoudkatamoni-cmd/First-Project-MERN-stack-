@@ -1,0 +1,89 @@
+@import './variables.css';
+
+.create-food-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 1.25rem;
+  background: linear-gradient(180deg, var(--bg), var(--bg));
+}
+
+.create-food-card {
+  width: 100%;
+  max-width: 720px;
+  background: var(--card);
+  border-radius: 12px;
+  padding: 1rem;
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow);
+}
+
+.cf-title { font-size: 1.15rem; font-weight:700; margin-bottom:0.25rem }
+.cf-sub { color: var(--muted); margin-bottom: 0.8rem }
+
+.cf-form { display: grid; gap: 0.75rem }
+.cf-group { display:flex; flex-direction:column; gap:0.4rem }
+.cf-label { color: var(--muted); font-size:0.9rem }
+.cf-input, .cf-textarea {
+  padding: 0.7rem 0.85rem;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  background: var(--input-bg);
+  color: var(--text);
+  font-size: 0.95rem;
+}
+
+.cf-file-input { display: none }
+
+.cf-uploader {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.9rem;
+  border-radius: 10px;
+  border: 1px dashed var(--border);
+  background: linear-gradient(180deg, rgba(255,255,255,0.02), transparent);
+  color: var(--muted);
+  cursor: pointer;
+  transition: border-color .15s ease, background .15s ease, transform .06s ease;
+}
+
+.cf-uploader:hover { border-color: var(--primary); transform: translateY(-1px) }
+.cf-uploader:active { transform: translateY(0) }
+
+.cf-icon { width:36px; height:36px; color:var(--primary) }
+.cf-uploader-text { display:flex; flex-direction:column }
+.cf-uploader-text strong { font-size:0.95rem; color:var(--text) }
+.cf-uploader-sub { font-size:0.8rem; color:var(--muted) }
+.cf-preview-container {
+  width: 100%;
+  margin-top: 0.5rem;
+  border-radius: 12px;
+  overflow: hidden;
+  background: var(--card);
+  /* Make the preview take most of the viewport height on mobile-first */
+  height: min(80vh, 820px);
+}
+
+.cf-preview {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.cf-textarea { resize: vertical; min-height:88px }
+
+.cf-actions { margin-top:0.5rem }
+
+/* Buttons reuse btn-primary but ensure spacing */
+.btn-primary { width: 100%; }
+
+/* desktop layout */
+@media (min-width: 740px) {
+  .cf-form { gap: 1rem }
+  .cf-group.inline { display:grid; grid-template-columns: 1fr 1fr; gap: 0.75rem }
+  .cf-preview-container { height: min(60vh, 720px) }
+  .cf-preview { max-height: none }
+}

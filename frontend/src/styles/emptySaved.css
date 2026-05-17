@@ -1,0 +1,77 @@
+.empty-saved-container {
+  min-height: 100vh;
+  background: linear-gradient(to bottom, #0f0f0f, #1a1a1a);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem;
+}
+
+.empty-saved-card {
+  width: 100%;
+  max-width: 420px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 24px;
+  padding: 2rem;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+  text-align: center;
+}
+
+.empty-saved-icon {
+  width: 90px;
+  height: 90px;
+  margin: 0 auto 1.5rem;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.08);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 2.5rem;
+}
+
+.empty-saved-title {
+  color: white;
+  margin-bottom: 0.4rem;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.empty-saved-count {
+  color: #9ca3af;
+  font-size: 0.95rem;
+  display: block;
+  margin-bottom: 1.5rem;
+}
+
+.empty-saved-text {
+  color: #d1d5db;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.empty-saved-btn {
+  padding: 0.80rem 1.4rem;
+
+  border: none;
+  border-radius: 14px;
+
+  background: white;
+  color: black;
+
+  text-decoration: none;
+
+  font-weight: 600;
+  cursor: pointer;
+
+  transition: all 0.2s ease;
+}
+
+.empty-saved-btn:hover {
+  transform: translateY(-2px);
+  opacity: 0.9;
+}
