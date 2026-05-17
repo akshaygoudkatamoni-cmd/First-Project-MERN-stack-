@@ -86,6 +86,11 @@
   .reel-overlay { bottom: 8vh; padding: 0 2rem; }
 }
 
+@media (max-width: 480px) {
+  .reel-desc { font-size: 0.9rem; }
+  .reel-overlay { bottom: 12vh; padding: 0 1rem; }
+}
+
 /* right-side vertical action column */
 .reel-actions {
   position: absolute;
