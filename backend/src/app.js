@@ -11,7 +11,7 @@ const app = express();
 app.use(cookieParser()); // cookie parser is used as middleware
 app.use(express.json()); // a middleware to parse req.body
 app.use(cors({
-    origin: 'https://first-project-mern-stack-lca2.vercel.app/', // allow requests from this origin
+    origin: 'https://first-project-mern-stack-lca2.vercel.app', // allow requests from this origin
     credentials: true // allow cookies to be sent with requests
 }));
 
